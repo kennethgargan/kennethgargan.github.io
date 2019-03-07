@@ -553,8 +553,8 @@ Key Frames
             animation-play-state: forwards;
     -webkit-animation-name: keyFadeOut;
             animation-name: keyFadeOut;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
+    -webkit-animation-duration: 0.9s;
+            animation-duration: 0.9s;
 }
 
 @-webkit-keyframes keyFadeOut{

@@ -37,8 +37,8 @@ function contentChange(){
         //Wait until the fadeIn animation is done before removing it
         window.setTimeout(function(){
             targetNewElement.classList.remove('fadeIn');
-        },1000);
-    },1000);
+        },500);
+    },900);
 }
 //Getter & Setter functions for global variables;
 function getCurrentPage(){
