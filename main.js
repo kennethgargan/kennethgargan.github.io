@@ -29,16 +29,19 @@ function contentChange(){
 
     //Wait until the animation is done before playing the FadeIn animation on the new requested page
     window.setTimeout(function(){
-        targetCurrentElement.style.display = 'none';   
+        targetCurrentElement.style.display = 'none';
+        targetCurrentElement.style.visibility = 'hidden';
         targetCurrentElement.classList.remove('fadeOut');
+        
+        targetNewElement.style.visibility = 'visible';
         targetNewElement.style.display = 'flex';
         targetNewElement.classList.add('fadeIn');
 
         //Wait until the fadeIn animation is done before removing it
         window.setTimeout(function(){
             targetNewElement.classList.remove('fadeIn');
-        },500);
-    },900);
+        },1000);
+    },1000);
 }
 //Getter & Setter functions for global variables;
 function getCurrentPage(){
