@@ -18,7 +18,7 @@ h1,h2,h3,h4, p{
     font-family: 'Open Sans', sans-serif;
 }
 body{
-    background-image: url("images/background-scenery.jpg");
+    background-image: url("images/background.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
