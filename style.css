@@ -5,6 +5,8 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+    -webkit-backface-visibility: hidden;
+    
 }
 
 html, body{
@@ -12,6 +14,7 @@ html, body{
     color: white;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
 }
 
 h1,h2,h3,h4, p{
@@ -164,6 +167,14 @@ Start of Page Sections
 
 /* Home */
 #home{
+    height:100%;
+    width:100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home-wrapper{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -194,6 +205,10 @@ Start of Page Sections
 
 #about, #skills, #portfolio, #contact{
     display: none;
+}
+
+#home, #about, #skills, #portfolio, #contact{
+    will-change: opacity;
 }
 
 button{
@@ -366,7 +381,7 @@ Portfolio
     visibility: hidden;
 }
 
-.portfolio-wrapper{
+#portfolio-wrapper{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -458,7 +473,7 @@ Contact
             align-items: center;
 }
 
-.contact-wrapper{
+#contact-wrapper{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -470,18 +485,18 @@ Contact
     height:50%;
 }
 
-.contact-wrapper h1{
+#contact-wrapper h1{
     text-align: center;
     font-size: 2em;
 }
-.contact-wrapper h2{
+#contact-wrapper h2{
     text-align: center;
     font-size: 1.5em;
     margin-top:2em;
     margin-bottom:1em;
 }
 
-.contact-wrapper p{
+#contact-wrapper p{
     text-align: center;
 }
 .contact-icons{
@@ -557,8 +572,8 @@ Key Frames
 
 */
 .fadeOut{
-    -webkit-animation-play-state: forwards;
-            animation-play-state: forwards;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
     -webkit-animation-name: keyFadeOut;
             animation-name: keyFadeOut;
     -webkit-animation-duration: 1s;
@@ -571,11 +586,13 @@ Key Frames
                 transform: translateY(0px);
         opacity: 1;
     }
-    to{
+    99%{
         -webkit-transform: translateY(30px);
                 transform: translateY(30px);
         opacity: 0;
-        visibility: hidden;
+        
+    }
+    to{
     }
 }
 
@@ -585,17 +602,19 @@ Key Frames
                 transform: translateY(0px);
         opacity: 1;
     }
-    to{
+    99%{
         -webkit-transform: translateY(30px);
                 transform: translateY(30px);
         opacity: 0;
-        visibility: hidden;
+    }
+    to{
+        
     }
 }
 
 .fadeIn{
-    -webkit-animation-play-state: forwards;
-            animation-play-state: forwards;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
     -webkit-animation-name: keyFadeIn;
             animation-name: keyFadeIn;
     -webkit-animation-duration: 1.0s;
@@ -608,11 +627,12 @@ Key Frames
                 transform: translateY(30px);
         opacity: 0;
     }
-    to{
+    99%{
         -webkit-transform: translateY(0px);
                 transform: translateY(0px);
         opacity: 1;
-        visibility: visible;
+    }
+    to{
     }
 }
 
@@ -622,11 +642,13 @@ Key Frames
                 transform: translateY(30px);
         opacity: 0;
     }
-    to{
+    99%{
         -webkit-transform: translateY(0px);
                 transform: translateY(0px);
-        opacity: 1;
-        visibility: visible;
+        opacity: 1; 
+    }
+    to{
+           
     }
 }
 
