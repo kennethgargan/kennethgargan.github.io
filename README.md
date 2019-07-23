@@ -1,5 +1,7 @@
 # 1 Page CV Theme for Kenneth.Gargan.ie (Kenneth-G.github.io)
 
+[Live Version](https://kenneth.gargan.ie)
+
 ## Goals with this website:
 -Create a website that can showcase my knowledge of HTML, CSS & Javascript
 
