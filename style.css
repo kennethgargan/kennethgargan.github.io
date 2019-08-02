@@ -392,6 +392,8 @@ Portfolio
     font-size: 1em;
     margin-left: 1em;
     margin-right:1em;
+    min-height:10%;
+    min-width: 20%;
     max-height: 20%;
     max-width: 20%;
     border-style: solid;
@@ -441,11 +443,20 @@ Portfolio
     border-style: solid;
     border-width: 1px;
     border-radius: 25px;
-    padding: 5px;
+    padding: 4px;
+    margin: 1em;
 }
 
 .cv-1-page{
     background-image: url("portfolio-image/website.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tweet-map{
+    background-image: url("portfolio-image/tweet.png");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -507,8 +518,8 @@ Contact
             flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
-    width:50%;
+            justify-content: space-around;
+    width:25%;
 }
 
 .contact-icons-wrapper{
@@ -559,7 +570,7 @@ Footer
             flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
+            justify-content: space-around;
     width:100%;
     -ms-flex-item-align: end;
         align-self: flex-end;
