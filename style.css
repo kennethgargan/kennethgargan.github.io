@@ -728,4 +728,21 @@ Key Frames
         -ms-grid-column:1;
         -ms-grid-column-span:3;
     }
+    #about-wrapper{
+        display:-ms-grid;
+        display:grid;
+        height:75%;
+        width:100%;
+        margin-top:15%;
+        text-align: center;
+        grid-template-areas: 
+        "about-me"
+        "my-hobbies"
+        "why-dev";
+        -ms-grid-rows:0.5fr;
+        grid-template-rows:0.5fr;
+        -ms-grid-columns: 1fr 1em 1fr 1em 1fr;
+        grid-template-columns:1fr;
+        grid-gap: 1em;
+    }
 }
