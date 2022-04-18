@@ -439,12 +439,15 @@ Portfolio
 }
 .cv-1-page{
     background-image: url("portfolio-image/website.png");
+    background-size: cover;
 }
 .dyson-fan{
     background-image: url("portfolio-image/dyson-fan.PNG");
+    background-size: cover;
 }
 .tweet-map{
     background-image: url("portfolio-image/tweet.png");
+    background-size: cover;
 }
 .card:hover{
     -webkit-transform: scale(1.1);
@@ -651,7 +654,7 @@ Key Frames
 }
 
 
-@media only screen and (max-width:1270px){
+@media only screen and (max-width:1400px){
     #content{
         overflow: auto;
     }
